@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="/ember-oak">
+  <BrowserRouter basename="/Ember-Oak_CoffeeShop_Project">
     <App />
   </BrowserRouter>,
 );
