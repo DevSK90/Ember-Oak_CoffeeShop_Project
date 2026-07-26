@@ -1,7 +1,7 @@
 import React from "react";
-import { data } from "../../data/chooseUsData";
-import WaveDivider from "../ui/WaveDivider";
-import { WAVES } from "../../data/waves";
+import { data } from "../../../data/chooseUsData";
+import WaveDivider from "../../ui/WaveDivider";
+import { WAVES } from "../../../data/waves";
 
 const WhyChooseUs = () => {
   return (

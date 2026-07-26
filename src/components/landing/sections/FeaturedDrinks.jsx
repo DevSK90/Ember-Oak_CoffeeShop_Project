@@ -1,7 +1,7 @@
 import React from "react";
-import ProductCard from "../ui/ProductCard";
-import { drinks } from "../../data/menu";
-import SectionHeading from "../ui/SectionHeading";
+import ProductCard from "../../ui/ProductCard";
+import { drinks } from "../../../data/menu";
+import SectionHeading from "../../ui/SectionHeading";
 
 const FeaturedDrinks = ({ subheading, heading }) => {
   return (

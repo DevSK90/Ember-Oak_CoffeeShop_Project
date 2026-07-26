@@ -1,7 +1,8 @@
 import React from "react";
-import SectionHeading from "../ui/SectionHeading";
-import { pastries } from "../../data/menu";
-import PastriesCard from "../ui/PastriesCard";
+// import SectionHeading from "../ui/SectionHeading";
+import SectionHeading from "../../ui/SectionHeading.jsx";
+import { pastries } from "../../../data/menu.js";
+import PastriesCard from "../../ui/PastriesCard";
 
 const Pastries = () => {
   return (

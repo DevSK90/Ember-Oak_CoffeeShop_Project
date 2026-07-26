@@ -1,5 +1,5 @@
 import React from "react";
-import beans from "../../assets/images/beans.jpg";
+import beans from "../../../assets/images/beans.jpg";
 
 const OurBeans = () => {
   return (

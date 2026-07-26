@@ -1,7 +1,7 @@
 import React from "react";
-import hero_cup from "../../assets/images/hero_cup.jpg";
-import WaveDivider from "../ui/WaveDivider";
-import { WAVES } from "../../data/waves";
+import hero_cup from "../../../assets/images/hero_cup.jpg";
+import WaveDivider from "../../ui/WaveDivider";
+import { WAVES } from "../../../data/waves";
 // import { hero_cup } from "../../assets/images/hero_cup.jpg";
 
 const Hero = () => {
