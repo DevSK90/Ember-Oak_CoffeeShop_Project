@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../layout/Navbar";
 import Hero from "./sections/Hero";
 import TrustBadges from "./sections/TrustBadges";
 import FeaturedDrinks from "./sections/FeaturedDrinks";
@@ -11,7 +10,6 @@ import Footer from "../layout/Footer";
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <Hero />
       <TrustBadges />
       <FeaturedDrinks />
