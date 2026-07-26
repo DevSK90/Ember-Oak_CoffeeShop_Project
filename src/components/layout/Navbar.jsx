@@ -7,8 +7,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative bg-cream-base">
-      <div className="flex justify-between items-center py-4 px-5 sm:px-10">
+    <div className="relative bg-cream-base border-b border-deep-chocolate/8 ">
+      <div className="flex justify-between items-center py-4 px-5 sm:px-10 ">
         <h1 className="text-2xl sm:text-3xl font-heading text-textdark-01">
           Ember & Oak
         </h1>
