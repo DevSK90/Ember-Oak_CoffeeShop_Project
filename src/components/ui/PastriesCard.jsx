@@ -8,7 +8,7 @@ const PastriesCard = ({ image, name, price }) => {
         <img
           src={image}
           alt={name}
-          className="w-full h-55 object-cover rounded-image"
+          className="w-full h-48 sm:h-55 object-cover rounded-image"
         />
       </div>
       <div className="pt-5 px-1.5">

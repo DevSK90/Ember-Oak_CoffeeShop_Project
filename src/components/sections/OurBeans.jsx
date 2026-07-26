@@ -3,16 +3,16 @@ import beans from "../../assets/images/beans.jpg";
 
 const OurBeans = () => {
   return (
-    <div className="mt-32 px-20">
-      <div className="w-full h-auto p-20 rounded-panel flex justify-between gap-3 items-center bg-card-surface">
-        <div className="flex-1 flex flex-col gap-5 items-start">
+    <div className="mt-20 px-5 sm:mt-24 sm:px-10 lg:mt-32 lg:px-20">
+      <div className="w-full h-auto p-6 sm:p-10 lg:p-20 rounded-panel flex flex-col lg:flex-row justify-between gap-8 lg:gap-3 items-center bg-card-surface">
+        <div className="flex-1 flex flex-col gap-5 items-center text-center lg:items-start lg:text-left">
           <span className="text-lg font-bold text-terracotta-accent">
             OUR BEANS
           </span>
-          <h1 className="text-5xl text-deep-chocolate">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl text-deep-chocolate">
             Grown with care, roasted with purpose.
           </h1>
-          <p className=" text-wrap text-xl pr-16">
+          <p className="text-wrap text-base sm:text-lg lg:text-xl lg:pr-16">
             We work directly with growers in Ethiopia, Colombia, and Sumatra,
             paying above fair-trade prices for beans we'd be proud to serve
             ourselves. Every bag is roasted in-house, in small batches, so what
@@ -24,7 +24,7 @@ const OurBeans = () => {
           <img
             src={beans}
             alt="Beans.jpg"
-            className="relative object-cover w-full h-100 rounded-image"
+            className="relative object-cover w-full h-56 sm:h-72 lg:h-100 rounded-image"
           />
         </div>
       </div>

@@ -7,7 +7,7 @@ const ProductCard = ({ image, name, description, price, likes }) => {
         <img
           src={image}
           alt={name}
-          className="w-full h-55 object-cover rounded-image"
+          className="w-full h-48 sm:h-55 object-cover rounded-image"
         />
         <span className="absolute top-3 right-3 bg-cream-white text-terracotta-hover text-xs font-bold px-3 py-1.5 rounded-full shadow">
           {" "}

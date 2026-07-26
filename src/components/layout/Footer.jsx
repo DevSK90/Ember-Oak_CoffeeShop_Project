@@ -6,7 +6,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className="mt-20 bg-dark-chocolate">
-      <div className="py-10 px-20 grid grid-cols-[1.3fr_1fr_1fr_1.2fr] gap-3">
+      <div className="py-10 px-5 sm:px-10 lg:px-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1.2fr] gap-8 sm:gap-6 lg:gap-3">
         <div className="flex flex-col gap-3">
           <h1 className="text-[22px] font-heading font-extrabold text-lighttext-01">
             Ember & Oak
@@ -16,7 +16,7 @@ const Footer = () => {
             with intention since 2016.
           </p>
         </div>
-        <div className="flex flex-col gap-3 mx-auto">
+        <div className="flex flex-col gap-3">
           <span className="text-sm font-bold text-lighttext-01">Visit Us</span>
           <p className="text-lighttext-03 text-sm leading-relaxed">
             214 Maple Street
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-340 border-t border-cream-base/20 mx-auto py-6 flex flex-wrap justify-between gap-3">
+      <div className="max-w-340 border-t border-cream-base/20 mx-auto px-5 sm:px-10 lg:px-20 py-6 flex flex-wrap justify-center sm:justify-between gap-3">
         <span className="text-xs text-textdark-03">
           © 2026 Ember &amp; Oak Coffee Co. All rights reserved.
         </span>

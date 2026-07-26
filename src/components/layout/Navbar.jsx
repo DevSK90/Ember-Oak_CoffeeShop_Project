@@ -1,19 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
+
+const NAV_LINKS = ["Home", "Menu", "About", "Blog", "Contact"];
 
 const Navbar = () => {
-  return (
-    <div className="flex justify-between items-center py-4 px-10">
-      <h1 className="text-3xl font-heading text-textdark-01">Ember & Oak</h1>
+  const [isOpen, setIsOpen] = useState(false);
 
-      <ul className="flex space-x-6">
-        <li className=" text-deep-chocolate font-semibold text-md">Home</li>
-        <li className=" text-deep-chocolate font-semibold text-md">Menu</li>
-        <li className=" text-deep-chocolate font-semibold text-md">About</li>
-        <li className=" text-deep-chocolate font-semibold text-md">Blog</li>
-        <li className=" text-deep-chocolate font-semibold text-md">Contact</li>
-      </ul>
-      {/* <button className="bg-terracotta-accent hover:bg-terracotta-hover text-cream-white font-bold py-2 px-4 rounded-3xl shadow-button"> */}
-      <button className="btn">Order Now</button>
+  return (
+    <div className="relative bg-cream-base">
+      <div className="flex justify-between items-center py-4 px-5 sm:px-10">
+        <h1 className="text-2xl sm:text-3xl font-heading text-textdark-01">
+          Ember & Oak
+        </h1>
+
+        <ul className="hidden md:flex space-x-6">
+          {NAV_LINKS.map((link) => (
+            <li
+              key={link}
+              className="text-deep-chocolate font-semibold text-md"
+            >
+              {link}
+            </li>
+          ))}
+        </ul>
+
+        <button className="btn hidden md:inline-block">Order Now</button>
+
+        <button
+          type="button"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen((open) => !open)}
+          className="md:hidden text-deep-chocolate cursor-pointer"
+        >
+          {isOpen ? <X className="size-7" /> : <Menu className="size-7" />}
+        </button>
+      </div>
+
+      {isOpen && (
+        <div className="md:hidden px-5 sm:px-10 pb-6 flex flex-col gap-4">
+          <ul className="flex flex-col gap-4">
+            {NAV_LINKS.map((link) => (
+              <li
+                key={link}
+                className="text-deep-chocolate font-semibold text-md"
+              >
+                {link}
+              </li>
+            ))}
+          </ul>
+          <button className="btn self-start">Order Now</button>
+        </div>
+      )}
     </div>
   );
 };
