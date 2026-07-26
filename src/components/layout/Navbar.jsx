@@ -1,7 +1,29 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
-const NAV_LINKS = ["Home", "Menu", "About", "Blog", "Contact"];
+const NAV_LINKS = [
+  {
+    name: "Home",
+    link: "/",
+  },
+  {
+    name: "Menu",
+    link: "/menu",
+  },
+  {
+    name: "About",
+    link: "/about",
+  },
+  {
+    name: "Blog",
+    link: "/blog",
+  },
+  {
+    name: "Contact",
+    link: "/contact",
+  },
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,13 +36,14 @@ const Navbar = () => {
         </h1>
 
         <ul className="hidden md:flex space-x-6">
-          {NAV_LINKS.map((link) => (
-            <li
-              key={link}
+          {NAV_LINKS.map((nav) => (
+            <Link
+              to={nav.link}
+              key={nav}
               className="text-deep-chocolate font-semibold text-md"
             >
-              {link}
-            </li>
+              {nav.name}
+            </Link>
           ))}
         </ul>
 
@@ -40,13 +63,14 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden px-5 sm:px-10 pb-6 flex flex-col gap-4">
           <ul className="flex flex-col gap-4">
-            {NAV_LINKS.map((link) => (
-              <li
-                key={link}
+            {NAV_LINKS.map((nav) => (
+              <Link
+                to={nav.link}
+                key={nav}
                 className="text-deep-chocolate font-semibold text-md"
               >
-                {link}
-              </li>
+                {nav.name}
+              </Link>
             ))}
           </ul>
           <button className="btn self-start">Order Now</button>
