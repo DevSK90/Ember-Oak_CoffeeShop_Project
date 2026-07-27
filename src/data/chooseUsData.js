@@ -1,3 +1,5 @@
+import { BadgeCheck, Clock4, Users } from "lucide-react";
+
 export const data = [
   {
     id: "01",
@@ -18,5 +20,26 @@ export const data = [
     id: "04",
     title: "Expert Baristas",
     desc: "Certified, trained, and genuinely obsessed with the craft.",
+  },
+];
+
+export const values = [
+  {
+    id: "01",
+    icon: BadgeCheck,
+    title: "Direct Trade",
+    desc: "We pay farmers fairly and build relationships that last, not just transactions.",
+  },
+  {
+    id: "02",
+    icon: Clock4,
+    title: "Slow Craft",
+    desc: "No shortcuts. Every batch is roasted, tasted, and adjusted by hand.",
+  },
+  {
+    id: "03",
+    icon: Users,
+    title: "Community First",
+    desc: "A space built for lingering, connecting, and coming back.",
   },
 ];
