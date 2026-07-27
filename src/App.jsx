@@ -4,8 +4,8 @@ import Navbar from "./components/layout/Navbar.jsx";
 import Home from "./components/landing/Home";
 import Menu from "./components/menu/Menu";
 import About from "./components/about/About.jsx";
-import Blog from "./components/blog/Blog.jsx";
 import Contact from "./components/contact/Contact.jsx";
+import Beans from "./components/beans/Beans.jsx";
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/beans" element={<Beans />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>

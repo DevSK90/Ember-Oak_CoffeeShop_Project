@@ -12,12 +12,12 @@ const NAV_LINKS = [
     link: "/menu",
   },
   {
-    name: "About",
-    link: "/about",
+    name: "Beans",
+    link: "/beans",
   },
   {
-    name: "Blog",
-    link: "/blog",
+    name: "About",
+    link: "/about",
   },
   {
     name: "Contact",
