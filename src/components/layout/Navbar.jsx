@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NAV_LINKS = [
   {
@@ -37,13 +37,15 @@ const Navbar = () => {
 
         <ul className="hidden md:flex space-x-6">
           {NAV_LINKS.map((nav) => (
-            <Link
+            <NavLink
               to={nav.link}
-              key={nav}
-              className="text-deep-chocolate font-semibold text-md"
+              key={nav.link}
+              className={({ isActive }) =>
+                `text-md transition-colors duration-200 ${isActive ? "font-bold text-terracotta-accent" : "font-semibold text-deep-chocolate"}`
+              }
             >
               {nav.name}
-            </Link>
+            </NavLink>
           ))}
         </ul>
 
