@@ -56,7 +56,8 @@ const Footer = () => {
       </div>
       <div className="max-w-340 border-t border-cream-base/20 mx-auto px-5 sm:px-10 lg:px-20 py-6 flex flex-wrap justify-center sm:justify-between gap-3">
         <span className="text-xs text-textdark-03">
-          © 2026 Ember &amp; Oak Coffee Co. All rights reserved.
+          © {new Date().getFullYear()} Ember &amp; Oak Coffee Co. All rights
+          reserved.
         </span>
         <div className="flex gap-6">
           <a

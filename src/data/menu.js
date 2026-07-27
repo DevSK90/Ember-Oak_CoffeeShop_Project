@@ -62,7 +62,7 @@ export const pastries = [
 export const menuItems = [
   {
     id: "1",
-    categoty: "coffee",
+    Category: "coffee",
     image: Caramel_Iced_Coffee,
     name: "Caramel Iced Coffee",
     description: "Double espresso, steamed oat milk, house caramel.",
@@ -71,7 +71,7 @@ export const menuItems = [
   },
   {
     id: "2",
-    categoty: "coffee",
+    Category: "coffee",
     image: velvet_cappuccino,
     name: "velvet cappuccino",
     description: "Rich espresso with silky microfoam, hand-poured art.",
@@ -80,7 +80,7 @@ export const menuItems = [
   },
   {
     id: "3",
-    categoty: "coffee",
+    Category: "coffee",
     image: classic_espresso,
     name: "Classic Espresso",
     description: "Two-shot pull, rich crema, notes of cocoa and toasted nut.",
@@ -89,7 +89,7 @@ export const menuItems = [
   },
   {
     id: "4",
-    categoty: "tea",
+    Category: "tea",
     image: Spiced_Chai_Latte,
     name: "Spiced Chai Latte",
     description: "Black tea, warm spices, steamed milk, honey.",
@@ -98,7 +98,7 @@ export const menuItems = [
   },
   {
     id: "5",
-    categoty: "tea",
+    Category: "tea",
     image: Ceremonial_Matcha,
     name: "Ceremonial Matcha",
     description: "Stone-ground matcha whisked with steamed milk.",
@@ -107,7 +107,7 @@ export const menuItems = [
   },
   {
     id: "6",
-    categoty: "pastri",
+    Category: "Pastry",
     image: butter_croissant,
     name: "butter croissant",
     description: "Stone-ground matcha whisked with steamed milk.",
@@ -116,7 +116,7 @@ export const menuItems = [
   },
   {
     id: "7",
-    categoty: "pastri",
+    Category: "Pastry",
     image: basque_cheesecake,
     name: "basque cheesecake",
     description: "Stone-ground matcha whisked with steamed milk.",
@@ -126,7 +126,7 @@ export const menuItems = [
 
   {
     id: "8",
-    categoty: "pastri",
+    Category: "Pastry",
     image: sea_salt_cookie,
     name: "sea salt cookie",
     description: "Stone-ground matcha whisked with steamed milk.",
@@ -135,7 +135,7 @@ export const menuItems = [
   },
   {
     id: "9",
-    categoty: "cold",
+    Category: "cold",
     image: slow_cold_brew,
     name: "slow cold brew",
     description: "18-hour steep, notes of dark chocolate and cherry.",
@@ -144,7 +144,7 @@ export const menuItems = [
   },
   {
     id: "10",
-    categoty: "cold",
+    Category: "cold",
     image: Iced_Oat_Mocha,
     name: "Iced Oat Mocha",
     description: "House chocolate, espresso, oat milk over ice.",
