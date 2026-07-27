@@ -3,7 +3,7 @@ import roastery3 from "../../../assets/images/roastery3.jpg";
 
 const WhereItBegan = () => {
   return (
-    <div className="w-full h-auto mt-20 px-20 rounded-panel flex flex-row-reverse justify-between gap-16 items-center">
+    <div className="w-full h-auto mt-20 px-5 sm:px-12 lg:px-20 rounded-panel flex flex-col lg:flex-row-reverse justify-between gap-10 lg:gap-16 items-center">
       <div className="flex-1 flex flex-col gap-5 items-center text-center lg:items-start lg:text-left">
         <span className="text-lg font-bold text-terracotta-accent">
           WHERE IT BEGAN
@@ -26,10 +26,9 @@ const WhereItBegan = () => {
         <img
           src={roastery3}
           alt="roastery.jpg"
-          className="relative object-cover w-220 h-110 rounded-image"
+          className="object-cover w-full h-64 sm:h-80 lg:h-110 rounded-image"
         />
       </div>
-      {/* </div> */}
     </div>
   );
 };

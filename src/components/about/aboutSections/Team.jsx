@@ -4,12 +4,12 @@ import { team } from "../../../data/team";
 
 const Team = () => {
   return (
-    <div className="mt-10 px-5">
+    <div className="mt-10 px-5 sm:px-12 lg:px-20">
       <SectionHeading
         subheading="MEET THE TEAM"
         heading="The people behind the counter"
       />
-      <div className="grid grid-cols-4 gap-6.5 px-20 mt-13">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6.5 mt-13">
         {team.map((team) => (
           <div key={team.id} className="text-center">
             <img
