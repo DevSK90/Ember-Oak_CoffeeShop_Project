@@ -4,12 +4,12 @@ import SectionHeading from "../../ui/SectionHeading";
 const MenuHeading = () => {
   return (
     <div>
-      <div className="mt-10">
+      <div className="mt-10 px-5 sm:px-10">
         <SectionHeading
           subheading="OUR MENU"
           heading="Everything, made fresh"
         />
-        <p className="text-center mt-2 text-lg">
+        <p className="text-center mt-2 text-base sm:text-lg max-w-xl mx-auto">
           Coffee, tea, and pastries — hand-crafted daily from beans we roast
           ourselves.
         </p>

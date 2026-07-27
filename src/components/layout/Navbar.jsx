@@ -66,16 +66,21 @@ const Navbar = () => {
         <div className="md:hidden px-5 sm:px-10 pb-6 flex flex-col gap-4">
           <ul className="flex flex-col gap-4">
             {NAV_LINKS.map((nav) => (
-              <Link
+              <NavLink
                 to={nav.link}
-                key={nav}
-                className="text-deep-chocolate font-semibold text-md"
+                key={nav.name}
+                onClick={() => setIsOpen(false)}
+                className={({ isActive }) =>
+                  `text-md transition-colors duration-200 ${isActive ? "font-bold text-terracotta-accent" : "font-semibold text-deep-chocolate"}`
+                }
               >
                 {nav.name}
-              </Link>
+              </NavLink>
             ))}
           </ul>
-          <button className="btn self-start">Order Now</button>
+          <button onClick={() => setIsOpen(false)} className="btn self-start">
+            Order Now
+          </button>
         </div>
       )}
     </div>
