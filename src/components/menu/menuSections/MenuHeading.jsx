@@ -4,7 +4,7 @@ import SectionHeading from "../../ui/SectionHeading";
 const MenuHeading = () => {
   return (
     <div>
-      <div className="mt-16">
+      <div className="mt-10">
         <SectionHeading
           subheading="OUR MENU"
           heading="Everything, made fresh"
