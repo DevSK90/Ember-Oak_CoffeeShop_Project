@@ -10,6 +10,12 @@ import basque_cheesecake from "../assets/images/pastries/basque_cheesecake.jpg";
 import butter_croissant from "../assets/images/pastries/butter_croissant.jpg";
 import sea_salt_cookie from "../assets/images/pastries/sea_salt_cookie.jpg";
 
+import Antigua from "../assets/images/beans/Antigua.jpg";
+import House_Blend from "../assets/images/beans/House_Blend.jpg";
+import Huila_Reserve from "../assets/images/beans/Huila_Reserve.jpg";
+import Mandheling from "../assets/images/beans/Mandheling.jpg";
+import Yirgacheffe from "../assets/images/beans/Yirgacheffe.jpg";
+
 export const drinks = [
   {
     id: "drink-1",
@@ -150,5 +156,48 @@ export const menuItems = [
     description: "House chocolate, espresso, oat milk over ice.",
     price: "4.75",
     likes: 96,
+  },
+];
+
+export const beans = [
+  {
+    id: "bean1",
+    image: Yirgacheffe,
+    tags: ["Light Roast", "Ethiopia"],
+    name: "Yirgacheffe",
+    desc: "Floral and bright, with notes of jasmine, bergamot, and stone fruit.",
+    price: "18.00",
+  },
+  {
+    id: "bean2",
+    image: Huila_Reserve,
+    tags: ["Medium Roast", "Colombia"],
+    name: "Huila Reserve",
+    desc: "Balanced and sweet, with caramel, red apple, and a hint of walnut.",
+    price: "17.00",
+  },
+  {
+    id: "bean3",
+    image: Antigua,
+    tags: ["Medium Roast", "Guatemala"],
+    name: "Antigua",
+    desc: "Rich and spiced — cocoa, cinnamon, and a smooth, full body.",
+    price: "17.50",
+  },
+  {
+    id: "bean4",
+    image: Mandheling,
+    tags: ["Dark Roast", "Sumatra"],
+    name: "Mandheling",
+    desc: "Bold and earthy — dark chocolate, cedar, and a syrupy body.",
+    price: "16.50",
+  },
+  {
+    id: "bean5",
+    image: House_Blend,
+    tags: ["Medium-Dark", "House Blend"],
+    name: "Ember Signature Blend",
+    desc: "Our house cup — brown sugar, roasted almond, and a smooth finish.",
+    price: "19.00",
   },
 ];
