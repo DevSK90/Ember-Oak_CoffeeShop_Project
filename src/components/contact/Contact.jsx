@@ -1,5 +1,5 @@
 import React from "react";
-import ContactHero from "./ContactHero";
+import ContactHero from "./sections/ContactHero";
 
 const Contact = () => {
   return (
