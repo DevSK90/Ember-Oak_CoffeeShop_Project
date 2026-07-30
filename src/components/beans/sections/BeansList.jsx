@@ -19,7 +19,7 @@ const BeansList = () => {
               {bean.tags.map((tags) => (
                 <span
                   key={tags}
-                  className="bg-tan-surface text-terracotta-accent font-bold py-1 px-3 rounded-full"
+                  className="bg-tan-surface text-xs text-terracotta-accent font-bold py-1 px-3 rounded-full"
                 >
                   {tags}
                 </span>
