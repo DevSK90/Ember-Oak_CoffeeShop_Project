@@ -2,6 +2,7 @@ import React from "react";
 import hero_cup from "../../../assets/images/hero_cup.jpg";
 import WaveDivider from "../../ui/WaveDivider";
 import { WAVES } from "../../../data/waves";
+import { Link } from "react-router-dom";
 // import { hero_cup } from "../../assets/images/hero_cup.jpg";
 
 const Hero = () => {
@@ -19,7 +20,9 @@ const Hero = () => {
             Ethically-sourced arabica, roasted in small batches and crafted by
             hand. Every cup is an invitation to slow down.
           </p>
-          <button className="btn">Explore the Menu</button>
+          <Link to="/menu">
+            <button className="btn">Explore the Menu</button>
+          </Link>
         </div>
         <div className="flex-1 w-full max-w-sm lg:max-w-none">
           <img

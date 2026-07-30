@@ -1,5 +1,6 @@
 import React from "react";
 import beans from "../../../assets/images/beans.jpg";
+import { Link } from "react-router-dom";
 
 const OurBeans = () => {
   return (
@@ -18,7 +19,9 @@ const OurBeans = () => {
             ourselves. Every bag is roasted in-house, in small batches, so what
             you taste is always at its peak.
           </p>
-          <button className="btn2 hover:btn2:hover">Shop Our Beans</button>
+          <Link to="/beans">
+            <button className="btn2 hover:btn2:hover">Shop Our Beans</button>
+          </Link>
         </div>
         <div className="flex-1 w-full h-auto">
           <img

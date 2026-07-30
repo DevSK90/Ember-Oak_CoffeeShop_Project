@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NAV_LINKS = [
   {
@@ -31,9 +31,11 @@ const Navbar = () => {
   return (
     <div className="relative bg-cream-base border-b border-deep-chocolate/8 ">
       <div className="flex justify-between items-center py-4 px-5 sm:px-10 ">
-        <h1 className="text-2xl sm:text-3xl font-heading text-textdark-01">
-          Ember & Oak
-        </h1>
+        <Link to="/">
+          <h1 className="text-2xl sm:text-3xl font-heading text-textdark-01">
+            Ember & Oak
+          </h1>
+        </Link>
 
         <ul className="hidden md:flex space-x-6">
           {NAV_LINKS.map((nav) => (
@@ -49,7 +51,9 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <button className="btn hidden md:inline-block">Order Now</button>
+        <Link to="/menu">
+          <button className="btn hidden md:inline-block">Order Now</button>
+        </Link>
 
         <button
           type="button"
@@ -78,9 +82,11 @@ const Navbar = () => {
               </NavLink>
             ))}
           </ul>
-          <button onClick={() => setIsOpen(false)} className="btn self-start">
-            Order Now
-          </button>
+          <Link to="/menu">
+            <button onClick={() => setIsOpen(false)} className="btn self-start">
+              Order Now
+            </button>
+          </Link>
         </div>
       )}
     </div>

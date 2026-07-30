@@ -19,9 +19,9 @@ const Footer = () => {
         <div className="flex flex-col gap-3">
           <span className="text-sm font-bold text-lighttext-01">Visit Us</span>
           <p className="text-lighttext-03 text-sm leading-relaxed">
-            214 Maple Street
+            Dambulla Road, Kurunegala
             <br />
-            Portland, OR 97205
+            Sri Lanka, 97205
           </p>
         </div>
         <div className="flex flex-col gap-3">
@@ -31,7 +31,7 @@ const Footer = () => {
             <br />
             Sat-Sun:8am - 5pm
             <br />
-            (503) 555-0148
+            077 555-0148
           </p>
         </div>
         <div className="flex flex-col gap-3">
